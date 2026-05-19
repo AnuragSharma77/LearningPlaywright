@@ -1,8 +1,4 @@
 const {test,expect} = require('@playwright/test');
-//waitForLoadState('networkidle')- this waitforloadstate method is used where we have to wait for the apis to load 
-// Two ways to create locator with text - 1st which search on the whole page eg - "text= Add to Cart" and 2nd that seach around the particular tag = "tagname: has text ("")"
-//pressSequentially - this is a method which is used when we have to enter the input one by on letter in the field
-
 test("Browser Context-Validating Error Login", async({page}) => {
 
     await page.goto("https://rahulshettyacademy.com/client") 
